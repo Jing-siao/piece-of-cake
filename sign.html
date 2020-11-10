@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+  <title>piece of cake_sign_in</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/header_rwd.css">
+  <link rel="stylesheet" href="./bootstrap_installed_sample/vendors/css/hamburgers.css">
+  <link rel="stylesheet" href="./css/search.css">
+  <link rel="stylesheet" href="./css/sign_in.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/footer.css">
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <div class="logo">
+        <a href="./index.html" class="logo_a">
+          <img src="./img/logo.png" ait="piece of cake">
+          <span>piece of cake</span>
+        </a>
+      </div>
+      <div class="nav_bar">
+        <!-- 第一行 -->
+        <div class="search">
+          <form action="#" method="get">
+            <div class="search_input">
+              <input type="text" placeholder="search for over 500,000+recipes">
+              <button>
+                <img src="https://img.icons8.com/ios-filled/50/000000/search.png" />
+              </button>
+            </div>
+          </form>
+          <!-- window<767 搜尋 -->
+          <div class="fake_search">
+            <div class="fake_search_input">
+              <img src="https://img.icons8.com/ios-filled/50/000000/search.png" alt="">
+            </div>
+          </div>
+          <div class="button">
+            <a href="./write_recipe.html">Write recipe
+            </a>
+            <a href="./recipe.html" class="button2">My recipe</a>
+          </div>
+
+          <!-- 漢堡按鈕 -->
+          <button class="hamburger hamburger--squeeze" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+        </div>
+        <!-- 第二行 -->
+        <nav class="nav">
+          <ul class="nav_list">
+            <li>
+              <div class="social_block">
+                Baking
+                <ul class="social_link_list">
+                  <li>
+                    <a href="./categories.html">cakes</a>
+                  </li>
+                  <li>
+                    <a href="./categories.html">cookie
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./categories.html">waffle
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./categories.html">cupcakes
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./categories.html">bread
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./categories.html">pie
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./categories.html">tarts
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./categories.html">mousse
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./categories.html">doughnts
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./categories.html">dessert
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="./categories.html" target="">Trending</a>
+            </li>
+
+
+            <li>
+              <div class="social_block">
+                Simple
+                <ul class="social_link_list">
+                  <li>
+                    <a href="./categories.html">no oven</a>
+                  </li>
+                  <li>
+                    <a href="./categories.html">quick dessert</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="./course.html" target="">Course</a>
+            </li>
+            <li>
+              <a href="./cart.html" target="">Store</a>
+            </li>
+            <li>
+              <a href="sign.html" class="-on">
+                login in
+              </a>
+              <div class="cart">
+                <a href="./sign.html">
+                  <img src="./icon/icons8-male-user-24.png" alt="account">
+                </a>
+                <a href="./cart.html">
+                  <img src="./icon/icons8-shopping-cart-50.png" alt="cart">
+                </a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- 搜尋視窗 -->
+    <div class="search_slide">
+      <div class="input_slide">
+        <form action="#" method="get">
+          <input type="text" placeholder="search for over 500,000+recipes" id="searchBar">
+        </form>
+        <button>
+          <img src="./icon/close.svg">
+        </button>
+      </div>
+    </div>
+
+  </header>
+
+  <!-- 右下按鈕 -->
+  <div class="write">
+    <a href="write_recipe.html">
+      <img src="./icon/edit.svg" alt="">
+    </a>
+  </div>
+  <div class="heart">
+    <a href="recipe.html">
+      <img src="./icon/heart .svg" alt="">
+    </a>
+  </div>
+  <div class="cart_icon">
+    <a href="cart.html">
+      <img src="./icon/supermarket.svg" alt="">
+    </a>
+  </div>
+  <!-- 登入 -->
+  <div class="sign_outline">
+    <div class="outline">
+      <div class="sign_photo"></div>
+      <div class="sign_in">
+        <div class="login_logo">
+          <img src="./img/logo.png" alt="">
+        </div>
+        <form action="#" method="post">
+          <label for="username" class="form_label">
+            <input type="text" required id="username" name="username">
+            <span>username</span>
+          </label>
+          <label for="password" class="form_label">
+            <input type="password" required id="password" name="password">
+            <span>password</span>
+          </label>
+          <div class="login_in">
+            <div class="login_via">
+              <img src="https://img.icons8.com/color/48/000000/google-logo.png" />
+              <img src="https://img.icons8.com/color/48/000000/facebook-new.png" />
+              <img src="https://img.icons8.com/fluent/48/000000/gmail.png" />
+            </div>
+            <div class="account">
+              <a href="#">
+                <p>forget password</p>
+              </a>
+              <a href="#">
+                <p>create account</p>
+              </a>
+            </div>
+            <button type="submit">
+              login in
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="footer_content">
+      <div class="social">
+        <a href="#">
+          <img src="https://img.icons8.com/color/48/000000/facebook-new.png" alt="facebook">
+        </a>
+        <a href="#">
+          <img src="https://img.icons8.com/color/48/000000/youtube-play.png" alt="youtube">
+        </a> <a href="#">
+          <img src="https://img.icons8.com/color/48/000000/instagram-new.png" alt="instagram">
+        </a>
+        <a href="#">
+          <img src="https://img.icons8.com/fluent/48/000000/pinterest.png" alt="pinterest">
+        </a>
+        <a href="#">
+          <img src="https://img.icons8.com/color/48/000000/twitter.png" alt="twitter">
+        </a>
+      </div>
+      <div class="info">
+        <ul>account
+          <li>
+            <a href="#">login</a>
+          </li>
+          <li>
+            <a href="#">setting</a>
+          </li>
+          <li>
+            <a href="#">save</a>
+          </li>
+          <li>
+            <a href="#">cart</a>
+          </li>
+        </ul>
+        <ul>contact
+          <li>
+            <a href="#">email</a>
+          </li>
+          <li>
+            <a href="#">facebook</a>
+          </li>
+          <li>
+            <a href="#">phone</a>
+          </li>
+
+        </ul>
+        <ul>about
+          <li>
+            <a href="#">information</a>
+          </li>
+          <li>
+            <a href="#">jobs</a>
+          </li>
+          <li>
+            <a href="#">support</a>
+          </li>
+        </ul>
+        <ul>privacy
+          <li>
+            <a href="#">
+              your rights
+            </a>
+          </li>
+        </ul>
+        <ul>F&amp;Q
+          <li>
+            <a href="#">common</a>
+          </li>
+          <li>
+            <a href="#">help</a>
+          </li>
+
+        </ul>
+      </div>
+      <p class="copyright ">Copyright &copy; 2020 piece of cake
+
+      </p>
+    </div>
+  </footer>
+  <script src="./bootstrap_installed_sample/vendors/jquery/jquery-3.4.1.min.js"></script>
+  <script src="./bootstrap_installed_sample/vendors/jquery/jquery-ui.min.js"></script>
+  <script src="./js/hamburger.js"></script>
+</body>
+
+</html>
