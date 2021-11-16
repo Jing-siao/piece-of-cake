@@ -1,0 +1,152 @@
+div.center_banner {
+  height: 210px;
+  margin: auto;
+  /* border: 1px solid #141313; */
+  background-color: #f77979;
+  /* background: linear-gradient( to right,#f77979 600px, white 600px); */
+  background-image: url(../img/centerad2.png), url(../img/centerad1.png);
+  background-size: 18%, contain;
+  background-repeat: no-repeat;
+  background-position: center bottom, right top;
+  font-size: 0px;
+  margin: 90px auto 0 auto;
+}
+
+.center_banner div {
+  /* border: 1px solid black; */
+  /* height: 100%; */
+  display: inline-block;
+  margin: 60px auto auto 10%;
+}
+
+div.center_banner div span {
+  /* border: 1px solid blue; */
+  color: white;
+  font-family: Lucida Bright;
+  display: block;
+}
+
+.Mixer {
+  font-size: 35px;
+}
+
+.giveaway {
+  font-size: 50px;
+}
+
+/* 分類 */
+div.baking_categories1,
+.baking_categories2 {
+  /* border: 1px solid black; */
+  font-size: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+div.baking_categories2 {
+  margin-top: 40px;
+}
+
+
+@media (max-width: 767px) {
+  div.center_banner {
+    width: 94%;
+    background-size: 0, 500px;
+    background-position: 0, right -150px top;
+    margin-left: 0;
+    margin-top: 40px;
+    height: 150px;
+    /* border: 1px solid black; */
+
+  }
+
+  .center_banner div {
+    margin-left: 5%;
+    margin-top: 40px;
+  }
+
+  .Mixer {
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgb(71, 71, 71);
+  }
+
+  .giveaway {
+    font-size: 36px;
+    text-shadow: 2px 2px 4px rgb(71, 71, 71);
+  }
+
+
+
+  div.baking_categories1,
+  .baking_categories2 {
+    width: 103%;
+    display: inline-block;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    overflow-x: scroll;
+    margin-left: -3%;
+    height: 155px;
+    /* background-color: white; */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.center_banner {
+    width: 96%;
+    background-size: 180px, contain;
+    background-position: center bottom, left 350px top;
+    margin-left: 0;
+    /* margin-right: 10%; */
+    height: 180px;
+  }
+
+  .center_banner div {
+    margin-left: 3%;
+    margin-top: 50px;
+  }
+
+  .Mixer {
+    font-size: 28px;
+  }
+
+  .giveaway {
+    font-size: 42px;
+  }
+
+  div.baking_categories1,
+  .baking_categories2 {
+    width: 104%;
+    display: inline-block;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    overflow-x: scroll;
+    margin-left: -4%;
+    height: 220px;
+
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  div.center_banner {
+    width: 960px;
+    background-size: 22%, contain;
+    background-position: center bottom, right -100px top;
+  }
+
+  .center_banner div {
+    margin-left: 5%;
+  }
+
+
+}
+
+@media (min-width: 1200px) {
+  div.center_banner {
+    width: 1140px;
+    background-size: 18%, contain;
+    background-position: center bottom, right -50px top;
+  }
+}

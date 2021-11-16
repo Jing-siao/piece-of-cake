@@ -1,0 +1,168 @@
+.index_main,
+.course {
+  margin-top: 50px;
+}
+
+.course h1 {
+  margin-top: 0;
+}
+
+/* 照片牆 */
+.teacher_info {
+  width: 100%;
+  margin-top: 150px;
+  /* border: 1px solid black; */
+  height: 500px;
+  font-size: 0px;
+  background-image: url(../img/course_bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top center;
+  overflow: hidden;
+}
+
+.teacher_info>div {
+  /* border: 1px solid red; */
+  margin: 0 auto;
+  width: 55%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.teacher_info>div div {
+  /* border: 1px solid rgb(238, 255, 0); */
+  display: inline-block;
+  margin: auto 0;
+  width: 280px;
+
+}
+
+.teacher_info>div div p.teacher {
+  /* border: 1px solid blue; */
+  color: white;
+  font-size: 30px;
+  font-family: Lucida Bright;
+  text-align: center;
+  margin: auto;
+}
+
+.teacher_info>div div p {
+  /* border: 1px solid blue; */
+
+  color: white;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(199, 199, 199);
+  margin: 30px auto 0 auto;
+  text-align: center;
+  line-height: 23px;
+  letter-spacing: 0.5px;
+}
+
+.teacher_info>div img {
+  /* border: 1px solid blue; */
+  height: 100%;
+  display: inline-block;
+}
+
+/* 所有課程 */
+
+
+.all_course {
+  margin: 80px auto 0 auto;
+  /* border: 1px solid blue; */
+}
+
+.all_course h1 {
+  /* border: 1px solid blue; */
+  margin-top: 0px;
+}
+
+@media (max-width: 575px) {
+  .teacher_info {
+    height: 250px;
+    background-attachment: scroll;
+    margin-top: 50px;
+
+  }
+
+  .teacher_info>div {
+    width: 97%;
+    margin-left: 0;
+    display: inline-block;
+    position: relative;
+
+  }
+
+  .teacher_info>div div {
+    position: absolute;
+    right: 0;
+    top: 20%;
+    margin-right: 0;
+    width: 55%;
+
+  }
+
+  .teacher_info>div div p.teacher {
+    font-size: 18px;
+  }
+
+  .teacher_info>div div p {
+    font-size: 12px;
+    margin: 15px auto 0 auto;
+    line-height: 14px;
+    letter-spacing: 0px;
+  }
+
+  .teacher_info>div img {
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    height: 75%;
+
+  }
+
+
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .teacher_info {
+    height: 350px;
+    background-attachment: scroll;
+    margin-top: 50px;
+
+  }
+
+  .teacher_info>div {
+    width: 90%;
+  }
+
+  .teacher_info>div div p.teacher {
+    font-size: 22px;
+  }
+
+  .teacher_info>div div p {
+    font-size: 14px;
+    margin: 20spx auto 0 auto;
+    line-height: 20px;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .teacher_info {
+    height: 350px;
+  }
+
+  .teacher_info>div {
+    width: 75%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .teacher_info>div {
+    width: 65%;
+  }
+}

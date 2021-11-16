@@ -1,0 +1,78 @@
+/* 麵包屑 */
+.breadcrumb {
+  /* border: 1px solid blue; */
+  margin: 0px auto;
+  padding-top: 97px;
+  padding-bottom: 20px;
+  font-size: 0;
+  max-width: 1140px;
+}
+
+.breadcrumb_list {
+  /* border: 1px solid red;  */
+  margin-top: 20px;
+  display: inline-block;
+
+}
+
+.breadcrumb_list li {
+  /* border: 1px solid blue; */
+  display: inline-block;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  margin: 0;
+
+}
+
+.breadcrumb_list li::before {
+  content: "/";
+  font-size: 18px;
+  margin: 0 5px;
+  color: gray;
+
+}
+
+.breadcrumb_list li:first-child::before {
+  content: "";
+  margin: 0;
+
+}
+
+.breadcrumb_list li a {
+  /* border: 1px solid green; */
+  padding: 3px;
+  font-size: 14px;
+  color: gray;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+}
+
+.breadcrumb_list li a:hover {
+  text-decoration: underline;
+  color: #f77979;
+}
+
+.breadcrumb_list li:last-child a {
+  text-decoration: underline;
+  color: #f77979;
+}
+
+@media (max-width: 767px) {
+  .breadcrumb {
+    padding-top: 40px;
+    margin-left: 3%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .breadcrumb {
+    padding-top: 40px;
+    margin-left: 5%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .breadcrumb {
+    width: 960px;
+  }
+}

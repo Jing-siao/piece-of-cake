@@ -1,0 +1,545 @@
+.write_recipe_main {
+  /* border: 1px solid blue; */
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+div.upload_zone {
+  width: 100%;
+  margin: 10px auto 0 auto;
+  /* border: 1px solid black; */
+  font-size: 0;
+}
+
+/* 上傳影片 */
+.upload_zone .upload {
+  /* border: 1px solid blue; */
+  width: 49%;
+  margin: 0;
+  margin-right: 2%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.upload h2 {
+  /* border: 1px solid #713f2c; */
+  line-height: 28px;
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+  color: #713f2c;
+  font-weight: 500;
+}
+
+.upload .upload_type {
+  /* border: 1px solid red; */
+  height: 230px;
+  background-color: rgb(240, 240, 240);
+  background-image: url("https://img.icons8.com/cotton/100/000000/upload-to-cloud--v1.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: .9;
+  position: relative;
+  margin: 0 auto;
+  /* display: inline-block; */
+
+}
+
+div.upload input {
+  border: 1px solid lightgray;
+  width: 100%;
+  height: 40px;
+  padding-left: 10px;
+  font-size: 20px;
+  /* color: lightgray; */
+  margin: 0 auto;
+  margin-bottom: 10px;
+
+}
+
+div.upload input:focus {
+  outline: none;
+  border: 1px solid #713f2c;
+
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.upload_type label {
+  /* border: 1px solid firebrick; */
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  color: #713f2c;
+  background-color: #FBD9D9;
+  border-radius: 8px;
+  opacity: 1;
+  padding: 10px;
+  position: absolute;
+  cursor: pointer;
+  width: 140px;
+  text-align: center;
+  box-shadow: 1px 1px 2px lightgray;
+
+}
+
+label.video {
+  bottom: 15px;
+  left: 15%;
+}
+
+label.image {
+  bottom: 15px;
+  right: 15%;
+}
+
+/* 簡短簡介 */
+.short_introduction {
+  display: inline-block;
+  /* border: 1px solid blue; */
+  width: 49%;
+  /* margin-left: 10px; */
+
+}
+
+.short_introduction h2 {
+  /* border: 1px solid #713f2c; */
+  line-height: 28px;
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+  color: #713f2c;
+  font-weight: 500;
+}
+
+.short_introduction textarea {
+  border: 1px solid lightgray;
+  padding-left: 10px;
+  resize: none;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
+.short_introduction textarea:focus {
+  outline: none;
+  border: 1px solid #713f2c;
+
+
+}
+
+/* 準備時間 */
+.short_introduction .time {
+  /* border: 1px solid blue; */
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-start;
+
+}
+
+.time .prep_time,
+.cook_time {
+  /* border: 1px solid red; */
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.time div label {
+  font-size: 20px;
+  color: #713f2c;
+  font-weight: 500;
+  /* padding-left: 10px; */
+}
+
+.time div label select {
+  /* border: 1px solid red; */
+  font-size: 14px;
+  text-align: right;
+  margin-left: 10px;
+  width: 75px;
+  background-color: rgb(243, 243, 243);
+  border-radius: 3px;
+  color: rgb(68, 68, 68);
+  cursor: pointer;
+  outline: none;
+  letter-spacing: 0.5px;
+}
+
+/* 食材編寫 */
+.ingredients_zone {
+  margin: 50px auto 0 auto;
+  /* border: 1px solid rgb(45, 210, 30); */
+  font-family: 'Roboto', sans-serif;
+  font-size: 0px;
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+}
+
+.ingredients_zone .ingredients {
+  /* border: 1px solid red; */
+  display: inline-block;
+
+}
+
+.ingredients_zone .ingredients span {
+  font-size: 20px;
+  color: #713f2c;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 25px;
+
+}
+
+.ingredients_zone .ingredients label {
+  /* border: 1px solid green; */
+  display: block;
+  margin-bottom: 10px;
+}
+
+.ingredients_zone .ingredients label input {
+  width: 512px;
+  border: none;
+  border-bottom: 2px solid rgb(214, 214, 214);
+  outline: none;
+  margin-left: 20px;
+  font-size: 14px;
+  display: inline-block;
+  height: 25px;
+  /* border: 1px solid red; */
+  vertical-align: middle;
+  border-radius: 0;
+
+}
+
+.ingredients_zone .ingredients label img {
+  /* border: 1px solid red; */
+  opacity: .4;
+  display: inline-block;
+  cursor: pointer;
+  height: 20px;
+  vertical-align: middle;
+
+}
+
+.ingredients .add_ingredients {
+  /* border: 1px solid red; */
+  width: 30px;
+  margin: 20px auto 0 auto;
+
+
+}
+
+.ingredients button {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-image: url("https://img.icons8.com/material-outlined/48/000000/add.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: .3;
+  outline: none;
+  cursor: pointer;
+
+}
+
+.photo_step_zone {
+  /* border: 1px solid black; */
+  width: 100%;
+  margin: 50px auto 0 auto;
+  font-size: 0;
+}
+
+.photo_step_zone h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: #713f2c;
+  font-weight: 500;
+}
+
+.photo_step_zone .add_steps {
+  /* border: 1px solid red; */
+  width: 35px;
+  margin: 20px auto 0 auto;
+
+
+}
+
+.add_steps button {
+  width: 35px;
+  height: 35px;
+  border-radius: 50px;
+  background-image: url("https://img.icons8.com/material-outlined/48/000000/add.png");
+  background-size: contain;
+  opacity: .3;
+  outline: none;
+  cursor: pointer;
+}
+
+.submit {
+  /* border: 1px solid blue; */
+  margin: 50px auto 0 auto;
+  font-size: 0;
+}
+
+.submit div {
+  text-align: center;
+}
+
+.submit div button {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  color: #713f2c;
+  background-color: #FBD9D9;
+  width: 100px;
+  outline: none;
+  margin-left: 50px;
+  padding: 5px;
+  outline: none;
+  border: none;
+  box-shadow: 1px 1px 2px lightslategray;
+  cursor: pointer;
+}
+
+.submit div button:first-child {
+  margin-left: 0;
+}
+
+.submit div button:last-child {
+  color: white;
+  background-color: #bc2a26;
+}
+
+.submit div button:active {
+  box-shadow: -1px -1px 2px lightslategrey;
+}
+
+@media (max-width: 767px) {
+  .write_recipe_main {
+    width: 94%;
+    margin: 0 3%;
+    padding-top: 30px;
+  }
+
+  .upload .upload_type {
+    height: 191px;
+    margin: 0 auto;
+    background-size: 80px;
+    /* display: inline-block; */
+
+  }
+
+  .upload h2 {
+    line-height: 22px;
+    font-size: 16px;
+  }
+
+  div.upload input {
+    height: 25px;
+    padding-left: 5px;
+    font-size: 16px;
+
+  }
+
+  .short_introduction h2 {
+    line-height: 22px;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+
+  .upload_zone .upload {
+    display: block;
+    width: 100%;
+  }
+
+  .short_introduction textarea {
+    width: 100%;
+    height: 250px;
+    font-size: 12px;
+  }
+
+  .upload_type label {
+    /* border: 1px solid firebrick; */
+    font-size: 14px;
+    border-radius: 4px;
+    padding: 5px;
+    width: 80px;
+  }
+
+  .time div label {
+    font-size: 16px;
+  }
+
+  .short_introduction {
+    display: block;
+    width: 100%;
+
+  }
+
+  .short_introduction .time {
+    justify-content: space-between;
+  }
+
+  label.video {
+    left: 15%;
+  }
+
+  label.image {
+    right: 15%;
+  }
+
+  .time div label select {
+    font-size: 12px;
+    margin-left: 8px;
+    width: 70px;
+
+  }
+
+  .ingredients_zone {
+    display: block;
+  }
+
+  .ingredients_zone .ingredients {
+    display: block;
+    width: 100%;
+    margin-top: 25px;
+  }
+
+  .ingredients_zone .ingredients span {
+    font-size: 16px;
+    margin-bottom: 15px;
+    /* border: 1px solid blue; */
+
+  }
+
+  .ingredients_zone .ingredients label {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .ingredients_zone .ingredients label input {
+    width: 100%;
+    margin-left: 0;
+    font-size: 12px;
+    height: 20px;
+  }
+
+  .ingredients_zone .ingredients label img {
+    margin-top: 3px;
+    margin-left: 5px;
+
+  }
+
+  .ingredients button {
+    width: 28px;
+    height: 28px;
+  }
+
+  .photo_step_zone {
+    margin-top: 20px;
+  }
+
+  .photo_step_zone h2 {
+    font-size: 16px;
+  }
+
+  .submit div button {
+    font-size: 14px;
+    width: 80px;
+    margin-left: 15px;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .write_recipe_main {
+    width: 92%;
+    margin: 0 4%;
+    padding-top: 30px;
+  }
+
+  .upload_zone .upload {
+    display: block;
+    width: 100%;
+  }
+
+  .short_introduction {
+    display: block;
+    width: 100%;
+  }
+
+  label.video {
+    left: 25%;
+  }
+
+  label.image {
+    right: 25%;
+  }
+
+  .short_introduction h2 {
+    margin-top: 10px;
+  }
+
+  .cook_time {
+    margin-left: 150px;
+  }
+
+  .ingredients_zone {
+    display: block;
+    margin-top: 25px;
+  }
+
+  .ingredients_zone .ingredients {
+    display: block;
+    width: 100%;
+  }
+
+  .ingredients_zone .ingredients label {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .ingredients_zone .ingredients label input {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .ingredients_zone .ingredients label img {
+    margin-top: 3px;
+    margin-left: 5px;
+
+  }
+
+  .photo_step_zone {
+    margin-top: 20px;
+  }
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .write_recipe_main {
+    width: 960px;
+  }
+
+  .short_introduction .time {
+    justify-content: space-between;
+  }
+
+  .ingredients_zone .ingredients label input {
+    width: 424px;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  .write_recipe_main {
+    width: 1140px;
+  }
+
+  .cook_time {
+    margin-left: 50px;
+  }
+}

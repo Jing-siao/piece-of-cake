@@ -1,0 +1,64 @@
+@media (min-width:768px) {
+  .search_slide {
+    display: none !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .search_slide {
+    display: none;
+    background-color: #F1BBBA;
+
+  }
+
+  .search_slide .input_slide {
+    width: 100%;
+    /* border: 1px solid black; */
+    padding: 10px 4.5% 10px 3%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  form {
+    /* border: 1px solid blue; */
+    display: inline-block;
+    width: 90%;
+  }
+
+  .input_slide input {
+    display: inline-block;
+    width: 98%;
+    font-size: 14px;
+    height: 30px;
+    padding-left: 5px;
+    padding-top: 5px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(255, 241, 241);
+    border-radius: 0;
+  }
+
+  .input_slide input::placeholder {
+    font-size: 14px;
+    color: white;
+  }
+
+  .input_slide button {
+    display: inline-block;
+    /* border: 1px solid black; */
+    border: none;
+    outline: none;
+    width: 25px;
+    height: 30px;
+    vertical-align: middle;
+    background-color: #F1BBBA;
+  }
+
+  .input_slide button img {
+    /* border: 1px solid red; */
+    opacity: 0.5;
+    width: 100%;
+
+  }
+}

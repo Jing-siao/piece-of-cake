@@ -1,0 +1,166 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url(../font/Roboto-Regular.ttf) format('TrueType');
+}
+
+a.cards {
+  /* border: 1px solid lightgrey; */
+
+  display: inline-block;
+  height: 340px;
+  width: 238px;
+  background-color: #fffeeb;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 3px 3px 5px rgb(224, 218, 218);
+  transition: 0.3s;
+  text-decoration: none;
+
+}
+
+a.cards:hover {
+  transform: scale(1.05);
+  box-shadow: 5px 5px 8px rgb(209, 204, 204);
+}
+
+a.cards img {
+  /* border: 1px solid red; */
+  margin-bottom: 7px;
+}
+
+a.cards .time_people {
+  /* border: 1px solid red; */
+  margin: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5px;
+  color: #a79c8e;
+}
+
+a.cards .time_people .spend_time {
+  /* border: 1px solid blue; */
+  display: inline-block;
+
+
+}
+
+a.cards .time_people .spend_time .time_icon {
+  /* border: 1px solid red; */
+  width: 15px;
+  height: 14px;
+  background-image: url(../icon/stopwatch-solid.png);
+  background-size: contain;
+  display: inline-block;
+  opacity: .8;
+  background-repeat: no-repeat;
+  /* vertical-align: top; */
+
+}
+
+a.cards .time_people .spend_time p.time {
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  /* color: #a79c8e; */
+  display: inline-block;
+  padding-left: 6px;
+  /* vertical-align: top; */
+}
+
+a.cards .time_people .star {
+  /* border: 1px solid blue; */
+  background-image: url(../icon/star.png);
+  display: inline-block;
+  background-size: contain;
+  width: 80px;
+  height: 14px;
+  background-repeat: no-repeat;
+
+
+}
+
+a.cards .time_people .serve {
+  /* border: 1px solid blue; */
+  display: inline-block;
+
+}
+
+a.cards .time_people .serve .people_icon {
+  /* border: 1px solid blue; */
+  background-image: url(../icon/people.png);
+  display: inline-block;
+  background-size: contain;
+  width: 20px;
+  height: 14px;
+  background-repeat: no-repeat;
+  opacity: .8;
+}
+
+a.cards .time_people .serve .people {
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+
+  /* border: 1px solid blue; */
+  display: inline-block;
+  padding-left: 6px;
+
+}
+
+a.cards .name {
+  font-size: 18px;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  color: #713f2c;
+  display: block;
+  margin: 10px 10px 5px 10px;
+  white-space: initial;
+  /* border: 1px solid blue; */
+}
+
+@media (max-width: 767px) {
+  a.cards {
+    height: 272px;
+    width: 190px;
+    margin-top: 10px;
+  }
+
+  .cards img {
+    /* border: 1px solid black; */
+    width: 100%;
+  }
+
+  a.cards .time_people {
+    margin: 0 5px;
+  }
+
+  a.cards .name {
+    /* border: 1px solid green; */
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 5px;
+  }
+
+  a.cards .time_people .spend_time .time_icon {
+    width: 12px;
+    height: 11px;
+  }
+
+  a.cards .time_people .spend_time p.time {
+    font-size: 12px;
+    padding-left: 3px;
+  }
+
+  a.cards .time_people .star {
+    width: 68px;
+    height: 12px;
+  }
+
+  a.cards .time_people .serve .people_icon {
+    width: 16px;
+    height: 11px;
+  }
+
+  a.cards .time_people .serve .people {
+    font-size: 12px;
+    padding-left: 3px;
+  }
+}

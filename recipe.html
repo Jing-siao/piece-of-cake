@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1, user-scalable=no">
+  <title>piece of cake_recipe</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/header_rwd.css">
+  <link rel="stylesheet" href="./bootstrap_installed_sample/vendors/css/hamburgers.css">
+  <link rel="stylesheet" href="./css/search.css">
+  <link rel="stylesheet" href="./css/breadcrumb.css">
+  <link rel="stylesheet" href="./css/index_h1.css">
+  <link rel="stylesheet" href="./css/cards.css">
+  <link rel="stylesheet" href="./css/recipe.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="./css/footer.css">
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <div class="logo">
+        <a href="./index.html" class="logo_a">
+          <img src="./img/logo.png" ait="piece of cake">
+          <span>piece of cake</span>
+        </a>
+      </div>
+      <div class="nav_bar">
+        <!-- 第一行 -->
+        <div class="search">
+          <form action="#" method="get">
+            <div class="search_input">
+              <input type="text" placeholder="search for over 500,000+recipes">
+              <button>
+                <img src="https://img.icons8.com/ios-filled/50/000000/search.png" />
+              </button>
+            </div>
+          </form>
+          <!-- window<767 搜尋 -->
+          <div class="fake_search">
+            <div class="fake_search_input">
+              <img src="https://img.icons8.com/ios-filled/50/000000/search.png" alt="">
+            </div>
+          </div>
+          <div class="button">
+            <a href="./write_recipe.html">Write recipe
+            </a>
+            <a href="./recipe.html" class="button2">My recipe</a>
+          </div>
+
+          <!-- 漢堡按鈕 -->
+          <button class="hamburger hamburger--squeeze" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+        </div>
+        <!-- 第二行 -->
+        <nav class="nav">
+          <ul class="nav_list">
+            <li>
+              <div class="social_block">
+                Baking
+                <ul class="social_link_list">
+                  <li>
+                    <a href="./categories.html">cakes</a>
+                  </li>
+                  <li>
+                    <a href="./categories.html">cookie
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./categories.html">waffle
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./categories.html">cupcakes
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./categories.html">bread
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./categories.html">pie
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./categories.html">tarts
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./categories.html">mousse
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./categories.html">doughnts
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./categories.html">dessert
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="./categories.html" target="">Trending</a>
+            </li>
+
+
+            <li>
+              <div class="social_block">
+                Simple
+                <ul class="social_link_list">
+                  <li>
+                    <a href="./categories.html">no oven</a>
+                  </li>
+                  <li>
+                    <a href="./categories.html">quick dessert</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="./course.html" target="">Course</a>
+            </li>
+            <li>
+              <a href="./cart.html" target="">Store</a>
+            </li>
+            <li>
+              <a href="sign.html">
+                login in
+              </a>
+              <div class="cart">
+                <a href="./sign.html">
+                  <img src="./icon/icons8-male-user-24.png" alt="account">
+                </a>
+                <a href="./cart.html">
+                  <img src="./icon/icons8-shopping-cart-50.png" alt="cart">
+                </a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- 搜尋視窗 -->
+    <div class="search_slide">
+      <div class="input_slide">
+        <form action="#" method="get">
+          <input type="text" placeholder="search for over 500,000+recipes" id="searchBar">
+        </form>
+        <button>
+          <img src="./icon/close.svg">
+        </button>
+      </div>
+    </div>
+
+  </header>
+
+  <!-- 右下按鈕 -->
+  <div class="write">
+    <a href="write_recipe.html">
+      <img src="./icon/edit.svg" alt="">
+    </a>
+  </div>
+  <div class="heart">
+    <a href="recipe.html">
+      <img src="./icon/heart .svg" alt="">
+    </a>
+  </div>
+  <div class="cart_icon">
+    <a href="cart.html">
+      <img src="./icon/supermarket.svg" alt="">
+    </a>
+  </div>
+
+  <!-- 麵包屑 -->
+  <div class="breadcrumb">
+    <ol class="breadcrumb_list">
+      <li><a href="./index.html">home</a></li>
+      <li><a href="#">baking</a></li>
+      <li><a href="#">pie</a></li>
+      <li><a href="#">lime yogurt pie</a></li>
+    </ol>
+  </div>
+  <!-- 影片 -->
+  <div class="recipe_main">
+    <div class="video_recipe">
+      <!-- <video width="800" controls poster="./img/key-lime-pie-2-754.jpg">
+        <source src="./viedo/KEY LIME PIE MERINGUE @avantgardevegan by Gaz Oakley.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video> -->
+      <iframe  src="https://www.youtube.com/embed/YX-O7OKXT3Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="content_info">
+        <div class="content">
+          <h2>Lime Yogurt Pie</h2>
+          <div class="user">
+            <img src="./img/people1.png" alt="">
+            <h3>Michellica</h3>
+          </div>
+
+          <p>“Stephen Fry’s perfectly English nostalgic
+            treat is a joy to make and eat, with the sweet,
+            buttery shortcrust casing and tart lime filling
+            transporting you back to childhood.
+          </p>
+          <ul class="like_icon">
+            <li>
+              <img src="https://img.icons8.com/metro/26/000000/likes-folder.png" id="favorite">
+            </li>
+            <li>
+              <img src="https://img.icons8.com/material/24/000000/facebook-like--v1.png" id="like">
+            </li>
+            <li>
+              <img src="https://img.icons8.com/material-sharp/24/000000/share-rounded.png" id="share">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="all_ingredients">
+      <div class="ingredients_and_crust">
+        <div class="ingredients">
+          <h2>Ingredients
+          </h2>
+          <div class="ingredients_checkbox">
+            <input type="checkbox" name="1" id="option1" checked>
+            <label for="option1">4 large free-range egg yolks</label>
+          </div>
+          <div class="ingredients_checkbox">
+            <input type="checkbox" name="2" id="option2">
+            <label for="option2">400 ml condensed milk</label>
+          </div>
+          <div class="ingredients_checkbox">
+            <input type="checkbox" name="3" id="option3" checked>
+            <label for="option3">5 limes</label>
+          </div>
+          <div class="ingredients_checkbox">
+            <input type="checkbox" name="4" id="option4">
+            <label for="option4">200 ml double cream</label>
+          </div>
+        </div>
+        <div class="crust">
+          <h2>Crust</h2>
+          <div class="crust_checkbox">
+            <input type="checkbox" name="4" id="option5" checked>
+            <label for="option5">135 g unsalted butter</label>
+          </div>
+          <div class="crust_checkbox">
+            <input type="checkbox" name="5" id="option6">
+            <label for="option6">12 digestive biscuits</label>
+          </div>
+          <div class="crust_checkbox">
+            <input type="checkbox" name="6" id="option7">
+            <label for="option7">45 g caster sugar</label>
+          </div>
+        </div>
+        <div class="add_to_cart">
+          <a href="cart.html">
+            add to cart
+          </a>
+        </div>
+
+      </div>
+      <div class="total_time">
+        <ul>Prep Time
+          <li>30 minutes</li>
+        </ul>
+        <ul>Cook time
+          <li>30 minutes</li>
+        </ul>
+        <ul>Total Time
+          <li>
+            1 hour
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="contain">
+      <h1>Method</h1>
+      <ul class="step">
+        <li>
+          <img src="./img/recipe1.png" alt="" class="step_img">
+          <p>
+            1.Preheat the oven to 350.Then line a "9x5" bread loaf pan with parchment paper with overhanding sides to
+            use as handles to lift out the
+            pie later.
+            Spray the pan with cooking spray.
+          </p>
+        </li>
+        <li>
+          <img src="./img/recipe2.jpg" alt="" class="step_img">
+          <p>
+            2.Next, in a food processor, combine the graham crackers, melted butter and sugar. Pulse until the crumbs
+            are fine crumbs and look like wet sand.
+          </p>
+        </li>
+        <li>
+          <img src="./img/recipe3.png" alt="" class="step_img">
+          <p> 3.Press the graham cracker crumbs into the pan, and using a shot glass, press the crust up all sides of
+            the
+            pan by 1".
+            Take your time and press it firmly.
+          </p>
+        </li>
+        <li>
+          <img src="./img/recipe4.png" alt="" class="step_img">
+          <p>
+            4.Bake for 10 minutes, and let cool. Leave the oven on.
+          </p>
+
+        <li>
+          <img src="./img/recipe5.jpg" alt="" class="step_img">
+          <p>
+            5.Meanwhile, in a small bowl, whisk together the condensed milk, citrus juices and egg yolks (reserve the
+            egg
+            whites for
+            another use). Grate the zest of 1 lime using a microplane grater into the mixture and whisk to combine.
+          </p>
+
+        </li>
+        <li>
+          <img src="./img/recipe6.png" alt="" class="step_img">
+          <p>
+            6.Pour the filling into the crust and slide it back into the oven for 18-20 minutes.
+            When the pie is done, it will be very slightly jiggly.
+          </p>
+        </li>
+        <li>
+          <img src="./img/recipe7.jpg" alt="" class="step_img">
+          <p>
+            7.Let the pie cool to room temperature, cover it with plastic wrap loosely, and refrigerate overnight.
+          </p>
+        </li>
+        <li>
+          <img src="./img/recipe8.jpg" alt="" class="step_img">
+          <p>
+            8.Serve the pie with whipped cream and extra freshly grated lime zest on top.
+          </p>
+
+        </li>
+      </ul>
+    </div>
+    <div class="leave_comments">
+      <img src="./img/people2.png" alt="">
+      <input type="text" placeholder="leave your comments...">
+      <a href="#">
+        <img src="https://img.icons8.com/windows/24/000000/sent.png" />
+      </a>
+    </div>
+    <div class="all_comments">
+      <div class="comments">
+        <div class="user">
+          <img src="./img/people3.png" alt="">
+          <span>Sarah Jo</span>
+        </div>
+        <p>This recipe was my second choice, but should have been my first!! I made two pies for Easter from a different
+          recipe
+          that called for eggs, and we hated them! They were dense and heavy, more like a custard than anything, with
+          ...
+        </p>
+        <a href="">read more</a>
+      </div>
+      <div class="comments">
+        <div class="user">
+          <img src="./img/people4.png" alt="">
+          <span>Lemmonsgirl</span>
+        </div>
+
+        <p>This was really easy. I used Mothers Oatmeal Cookies as a crust instead of a graham cracker crust. Everything
+          else I
+          kept the same. Really took a matter of minutes, longest part was breaking up the cookies in the blender. I
+          also
+          used
+          Rose's Key Lime juice. EDITED: I liked ..
+        </p>
+        <a href="">read more</a>
+      </div>
+      <div class="comments">
+        <div class="user">
+          <img src="./img/people2.png" alt="">
+          <span>KimberMc</span>
+        </div>
+        <p>This pie turned out great, I used two cans of condensed milk which turned out to be close to 3 cups. I
+          purchased 20
+          keylimes which turned out to be exactly 3/4 cup of lime juice. I never got any bubbles while cooking, so I
+          think
+          I ended
+          up cooking it for approx10 ...
+        </p>
+        <a href="">read more</a>
+      </div>
+    </div>
+  </div>
+  <div class="index_main more_like_this">
+    <h1>More like this
+      <a href="#" class="more">more&rsaquo;&rsaquo;</a>
+    </h1>
+    <div class="Trending">
+      <!-- 第一行 -->
+      <a href="#" class="cards">
+        <img src="./img/card1.png" alt="">
+        <div class="time_people">
+          <div class="spend_time">
+            <div class="time_icon"></div>
+            <p class="time">1hr</p>
+          </div>
+          <div class="star"></div>
+          <div class="serve">
+            <div class="people_icon"></div>
+            <p class="people">4</p>
+          </div>
+        </div>
+        <p class="name">
+          Lime Yogurt Pie
+        </p>
+      </a>
+
+      <!-- 二 -->
+      <a href="#" class="cards">
+        <img src="./img/card2.png" alt="">
+        <div class="time_people">
+          <div class="spend_time">
+            <div class="time_icon"></div>
+            <p class="time">30min</p>
+          </div>
+          <div class="star"></div>
+          <div class="serve">
+            <div class="people_icon"></div>
+            <p class="people">12</p>
+          </div>
+        </div>
+        <p class="name">
+          Strawberry Cupcakes
+        </p>
+      </a>
+      <!-- 三 -->
+      <a href="#" class="cards">
+        <img src="./img/card3.png" alt="">
+        <div class="time_people">
+          <div class="spend_time">
+            <div class="time_icon"></div>
+            <p class="time">50min</p>
+          </div>
+          <div class="star"></div>
+          <div class="serve">
+            <div class="people_icon"></div>
+            <p class="people">6</p>
+          </div>
+        </div>
+        <p class="name">
+          Olive Oil Cake
+        </p>
+      </a>
+      <!-- 四 -->
+      <a href="#" class="cards">
+        <img src="./img/card4.png" alt="">
+        <div class="time_people">
+          <div class="spend_time">
+            <div class="time_icon"></div>
+            <p class="time">1hr 35 min</p>
+          </div>
+          <div class="star"></div>
+          <div class="serve">
+            <div class="people_icon"></div>
+            <p class="people">12</p>
+          </div>
+        </div>
+        <p class="name">
+          Cardamom Clementine Morning Buns
+        </p>
+      </a>
+      <a href="#" class="more">more</a>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer_content">
+      <div class="social">
+        <a href="#">
+          <img src="https://img.icons8.com/color/48/000000/facebook-new.png" alt="facebook">
+        </a>
+        <a href="#">
+          <img src="https://img.icons8.com/color/48/000000/youtube-play.png" alt="youtube">
+        </a> <a href="#">
+          <img src="https://img.icons8.com/color/48/000000/instagram-new.png" alt="instagram">
+        </a>
+        <a href="#">
+          <img src="https://img.icons8.com/fluent/48/000000/pinterest.png" alt="pinterest">
+        </a>
+        <a href="#">
+          <img src="https://img.icons8.com/color/48/000000/twitter.png" alt="twitter">
+        </a>
+      </div>
+      <div class="info">
+        <ul>account
+          <li>
+            <a href="#">login</a>
+          </li>
+          <li>
+            <a href="#">setting</a>
+          </li>
+          <li>
+            <a href="#">save</a>
+          </li>
+          <li>
+            <a href="#">cart</a>
+          </li>
+        </ul>
+        <ul>contact
+          <li>
+            <a href="#">email</a>
+          </li>
+          <li>
+            <a href="#">facebook</a>
+          </li>
+          <li>
+            <a href="#">phone</a>
+          </li>
+
+        </ul>
+        <ul>about
+          <li>
+            <a href="#">information</a>
+          </li>
+          <li>
+            <a href="#">jobs</a>
+          </li>
+          <li>
+            <a href="#">support</a>
+          </li>
+        </ul>
+        <ul>privacy
+          <li>
+            <a href="#">
+              your rights
+            </a>
+          </li>
+        </ul>
+        <ul>F&amp;Q
+          <li>
+            <a href="#">common</a>
+          </li>
+          <li>
+            <a href="#">help</a>
+          </li>
+
+        </ul>
+      </div>
+      <p class="copyright ">Copyright &copy; 2020 piece of cake
+
+      </p>
+    </div>
+  </footer>
+  <script src="./bootstrap_installed_sample/vendors/jquery/jquery-3.4.1.min.js"></script>
+  <script src="./bootstrap_installed_sample/vendors/jquery/jquery-ui.min.js"></script>
+
+  <script src="./js/hamburger.js"></script>
+  <script src="./js/recipe.js"></script>
+
+
+
+</body>
+
+</html>

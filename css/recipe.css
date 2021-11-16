@@ -1,0 +1,748 @@
+.recipe_main {
+  margin: 0 auto;
+}
+
+.more_like_this {
+  margin-top: 80px;
+}
+
+/* 影片 */
+.video_recipe {
+  /* border: 1px solid red; */
+  /* display: block; */
+  width: 100%;
+  height: 420px;
+  position: relative;
+  font-size: 0px;
+  box-shadow: 3px 3px 5px rgb(224, 218, 218);
+  background-color: white;
+  /* height: 450px; */
+}
+
+.video_recipe iframe {
+  /* border: 1px solid rgb(217, 255, 0); */
+  display: inline-block;
+  width: 740px;
+}
+
+.video_recipe .content_info {
+  /* border: 1px solid black; */
+  display: inline-block;
+  width: calc(100% - 740px);
+  height: 100%;
+  font-size: 0;
+  font-family: 'Roboto', sans-serif;
+  vertical-align: top;
+
+
+}
+
+.content_info .content {
+  /* border: 1px solid rgb(230, 74, 74); */
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  margin-top: 55px;
+  position: relative;
+}
+
+.content h2 {
+  font-size: 22px;
+  /* border: 1px solid blue; */
+  color: #713f2c;
+  font-weight: 500;
+}
+
+.content .user {
+  /* border: 1px solid black; */
+  font-size: 0;
+  margin-top: 30px;
+
+}
+
+.content .user img {
+  display: inline-block;
+  /* border: 1px solid blue; */
+
+  margin-right: 5px;
+
+
+}
+
+.content .user h3 {
+  display: inline-block;
+  /* border: 1px solid blue; */
+  font-size: 12px;
+  color: rgb(68, 68, 68);
+  margin-top: 15px;
+  vertical-align: bottom;
+
+}
+
+.content p {
+  display: block;
+  /* border: 1px solid blue; */
+  font-size: 16px;
+  color: rgb(68, 68, 68);
+  line-height: 20px;
+  margin-top: 20px;
+}
+
+.like_icon {
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.like_icon li {
+  /* border: 1px solid red; */
+  height: 32px;
+  width: 32px;
+  /* background-color: red; */
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #FBD9D9;
+  position: relative;
+
+}
+
+.like_icon li img {
+  /* border: 1px solid black; */
+  width: 75%;
+  height: 75%;
+  opacity: .7;
+  text-align: center;
+  vertical-align: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+
+}
+
+/* 食材區 */
+.all_ingredients {
+  margin: 60px auto 0;
+  /* border: 1px solid red; */
+  font-family: 'Roboto', sans-serif;
+  font-size: 0;
+}
+
+.ingredients_and_crust {
+  /* border: 1px solid green; */
+  display: inline-block;
+  position: relative;
+}
+
+.ingredients {
+  /* border: 1px solid purple; */
+  display: inline-block;
+  width: 260px;
+}
+
+.crust {
+  /* border: 1px solid purple; */
+  display: inline-block;
+  vertical-align: top;
+  width: 260px;
+  margin-left: 25px;
+}
+
+.total_time {
+  /* border: 1px solid purple; */
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 120px;
+
+
+}
+
+.ingredients_and_crust .add_to_cart {
+  display: block;
+  /* border: 1px solid black; */
+}
+
+.ingredients_and_crust label {
+  font-size: 14px;
+}
+
+.ingredients_and_crust a {
+  font-size: 16px;
+  display: block;
+  margin: 0 0 0 auto;
+  width: 100px;
+  text-align: center;
+  padding: 5px 0;
+  text-decoration: none;
+  color: #713f2c;
+  background-color: #bc2a26;
+  color: white;
+  box-shadow: 1px 1px 2px lightslategray;
+}
+
+.ingredients h2 {
+  /* border: 1px solid blue; */
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #713f2c;
+  font-weight: 500;
+}
+
+.crust h2 {
+  /* border: 1px solid blue; */
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #713f2c;
+  font-weight: 500;
+
+}
+
+.ingredients .ingredients_checkbox {
+  /* border: 1px solid black; */
+  font-size: 15px;
+  display: block;
+  color: rgb(68, 68, 68);
+  margin-bottom: 6px;
+
+}
+
+.crust .crust_checkbox {
+  /* border: 1px solid black; */
+  font-size: 15px;
+  display: block;
+  color: rgb(68, 68, 68);
+  margin-bottom: 6px;
+
+}
+
+/* time */
+.total_time ul {
+  /* border: 1px solid black; */
+  font-size: 18px;
+  display: inline-block;
+  color: #713f2c;
+  font-weight: 500;
+  margin-bottom: 30px;
+  width: 100px;
+  vertical-align: top;
+  position: relative;
+
+
+
+
+}
+
+.total_time ul li {
+  border-top: 5px solid #f8ecc9;
+  color: rgb(68, 68, 68);
+  padding-top: 8px;
+  margin-top: 15px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.total_time ul:first-child::before {
+  content: "";
+  position: absolute;
+  border: 3px solid #f8ecc9;
+  height: 35px;
+  top: 33px;
+
+  left: -6px;
+
+}
+
+/*ingredients 換checkbox*/
+.ingredients_checkbox label {
+  cursor: pointer;
+}
+
+.ingredients_checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.ingredients_checkbox input[type="checkbox"]+label::before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  /* border: 1px solid blue; */
+
+  background-image: url("../img/check.png");
+  background-size: contain;
+  margin-right: 5px;
+  position: relative;
+  top: 2px;
+}
+
+.ingredients_checkbox input[type="checkbox"]:checked+label::before {
+  background-image: url("../img/checked.png");
+}
+
+/* crust 換checkbox*/
+.crust_checkbox label {
+  cursor: pointer;
+}
+
+.crust_checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.crust_checkbox input[type="checkbox"]+label::before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  /* border: 1px solid blue; */
+
+  background-image: url("../img/check.png");
+  background-size: contain;
+  margin-right: 5px;
+  position: relative;
+  top: 2px;
+}
+
+.crust_checkbox input[type="checkbox"]:checked+label::before {
+  background-image: url("../img/checked.png");
+}
+
+/* 作法 */
+.contain {
+  /* border: 1px solid red; */
+  margin: 80px auto 0 auto;
+  font-size: 0;
+
+}
+
+.step {
+  /* border: 1px solid black; */
+  width: 100%;
+
+}
+
+.step li {
+  /* border: 1px solid blue; */
+  margin-bottom: 34px;
+  font-size: 0;
+}
+
+.step li:last-child {
+  margin-bottom: 0;
+}
+
+
+.step li p {
+  /* border: 1px solid black; */
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.5px;
+  line-height: 25px;
+  color: #713f2c;
+  width: calc(100% - 200px - 3%);
+  vertical-align: top;
+  margin-left: 3%;
+}
+
+.step_img {
+  display: inline-block;
+  width: 200px;
+  /* height: 100px; */
+}
+
+
+/* 留言區 */
+.leave_comments {
+  /* border: 1px solid red; */
+  margin: 50px auto 0 auto;
+  width: 50%;
+  position: relative;
+  font-size: 0;
+}
+
+.leave_comments>img {
+  /* border: 1px solid blue; */
+  display: inline-block;
+  width: 41px;
+
+}
+
+.leave_comments input {
+  border: 0.5px solid lightgray;
+  vertical-align: bottom;
+  width: calc(100% - 15px - 41px);
+  border-radius: 3px;
+  height: 28px;
+  display: inline-block;
+  margin-left: 15px;
+  padding-left: 8px;
+  font-size: 12px;
+  outline: none;
+}
+
+.leave_comments input:focus {
+  border: 1px solid #713f2c;
+}
+
+.leave_comments a {
+  /* border: 1px solid rgb(55, 153, 46); */
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  display: inline-block;
+  bottom: 0;
+  right: 3px;
+}
+
+.leave_comments a img {
+  /* border: 1px solid rgb(6, 15, 6); */
+  width: 100%;
+  height: 100%;
+  opacity: .8;
+}
+
+.all_comments {
+  /* border: 1px solid red; */
+  margin-top: 100px;
+  font-size: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+.all_comments .comments {
+  /* border: 1px solid red; */
+  width: 250px;
+  height: auto;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 0px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.all_comments .comments .user {
+  font-size: 0;
+
+}
+
+.comments .user img {
+  display: inline-block;
+  /* border: 1px solid blue; */
+}
+
+.comments .user span {
+  display: inline-block;
+  /* border: 1px solid blue; */
+  margin-left: 10px;
+  font-size: 12px;
+  color: rgb(68, 68, 68);
+  /* margin-top: 15px; */
+  vertical-align: bottom;
+}
+
+.comments p {
+  display: block;
+  margin: 0 15px;
+  /* border: 1px solid blue; */
+  font-size: 14px;
+  color: rgb(68, 68, 68);
+  line-height: 20px;
+  margin-top: 20px;
+}
+
+.comments a {
+  font-size: 14px;
+  color: #f77979;
+  margin-left: 15px;
+
+}
+
+@media (max-width: 767px) {
+  .recipe_main {
+    width: 94%;
+    margin: 0 3%;
+    margin-top: 30px;
+  }
+
+  .more_like_this {
+    margin-top: 50px;
+  }
+
+  .video_recipe {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .video_recipe iframe {
+    display: block;
+    width: 100%;
+    min-height: 300px;
+  }
+
+  .video_recipe .content_info {
+    display: block;
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  .content_info .content {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+
+  }
+
+  .like_icon {
+    /* border: 1px solid blue; */
+    margin: 10px 0;
+    position: static;
+  }
+
+  .content h2 {
+    font-size: 18px;
+  }
+
+  .content .user {
+    margin-top: 10px;
+
+  }
+
+  .content .user h3 {
+    font-size: 10px;
+
+  }
+
+  .content p {
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 10px;
+  }
+
+  .ingredients_and_crust {
+    display: block;
+    width: 100%;
+    position: static;
+  }
+
+
+  .ingredients {
+    display: block;
+    width: 100%;
+  }
+
+  .crust {
+    display: block;
+    margin-left: 0;
+    width: 100%;
+
+  }
+
+  .total_time {
+    /* border: 1px solid blue; */
+    display: flex;
+    margin-left: 0;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+
+  .ingredients_and_crust a {
+    margin: 0 auto;
+  }
+
+  .total_time ul {
+
+    font-size: 16px;
+    width: auto;
+    position: static;
+
+  }
+
+  .ingredients_and_crust label {
+    font-size: 12px;
+
+  }
+
+  .total_time ul:first-child::before {
+    display: none;
+  }
+
+  .total_time ul li {
+    font-size: 12px;
+  }
+
+  .step li {
+    margin-bottom: 20px;
+  }
+
+  .step li p {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    line-height: 22px;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .step_img {
+    display: block;
+    width: 180px;
+    /* margin: 0 auto; */
+  }
+
+  .leave_comments {
+    margin-left: 0;
+    width: 90%;
+    margin-top: 35px;
+  }
+
+  .all_comments {
+    display: inline-block;
+    margin-top: 55px;
+
+  }
+
+  .all_comments .comments {
+    width: 100%;
+    display: block;
+
+  }
+
+  .all_comments .comments:nth-child(2) {
+    margin: 15px auto;
+
+  }
+
+  .comments .user img {
+    width: 35px;
+  }
+
+  .comments .user span {
+    margin-left: 8px;
+    font-size: 10px;
+  }
+
+  .comments p {
+    font-size: 12px;
+    line-height: 16px;
+    width: 97%;
+    margin-left: 3%;
+    margin-top: 10px;
+
+  }
+
+  .comments a {
+    font-size: 12px;
+  }
+
+
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .recipe_main {
+    width: 92%;
+    margin: 0 4%;
+    margin-top: 30px;
+  }
+
+  .video_recipe {
+    height: 330px;
+  }
+
+  .video_recipe iframe {
+    width: 70%;
+    height: 100%;
+    vertical-align: top;
+  }
+
+  .video_recipe .content_info {
+    width: 30%;
+
+  }
+
+  .content_info .content {
+    width: 190px;
+    margin-top: 15px;
+  }
+
+  .content .user {
+    margin-top: 20px;
+
+  }
+
+  .all_ingredients {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .ingredients {
+    width: auto;
+
+  }
+
+  .crust {
+    width: auto;
+    margin-left: 20px;
+  }
+
+  .total_time {
+    margin: 0;
+
+  }
+
+  .all_comments {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+  }
+
+
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .recipe_main {
+    width: 960px;
+  }
+
+  .video_recipe {
+    height: 365px;
+  }
+
+  .video_recipe iframe {
+    width: 640px;
+    height: 100%;
+  }
+
+  .video_recipe .content_info {
+    width: calc(100% - 640px);
+
+  }
+
+  .content_info .content {
+    width: 250px;
+    margin-top: 35px;
+  }
+
+  .total_time {
+    margin-left: 60px;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  .recipe_main {
+    width: 1140px;
+  }
+
+  .video_recipe iframe {
+    height: 100%;
+  }
+}

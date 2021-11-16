@@ -1,0 +1,142 @@
+.baking_categories1 .circle{
+  width: 180px;
+  height: 180px;
+  /* border: 1px solid red; */
+  border-radius: 50%;
+  overflow: hidden;
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  box-shadow:3px 3px 5px rgb(175, 168, 168);
+  
+}
+.baking_categories2 .circle{
+  width: 180px;
+  height: 180px;
+  /* border: 1px solid red; */
+  border-radius: 50%;
+  overflow: hidden;
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  box-shadow:3px 3px 5px rgb(175, 168, 168);
+
+}
+
+.circle p{
+  /* border: 1px solid black; */
+  font-size: 16px;
+  color: white;
+  padding: 5px 0px;
+  background-color: hsla(32, 100%, 20%, 0.5);
+  position: absolute;
+  bottom: 15px;
+  right: 0px;
+  font-family: 'Roboto', sans-serif ;
+  text-align: center;
+  width: 180px;
+  
+}
+/* 第一個圈 */
+.categories1{
+  background-image: url(../img/c1.gif);
+  
+}
+.categories2{
+  background-image: url(../img/c2.gif);
+  
+}
+.categories3{
+  background-image: url(../img/c3.gif);
+  
+}
+.categories4{
+  background-image: url(../img/c4.gif);
+  
+}
+.categories5{
+  background-image: url(../img/c5.gif);
+  
+}
+.categories6{
+  background-image: url(../img/c6.gif);
+  
+}
+.categories7{
+  background-image: url(../img/c7.gif);
+  
+}
+.categories8{
+  background-image: url(../img/c8.gif);
+  
+}
+.categories9{
+  background-image: url(../img/c9.gif);
+  
+}
+.categories10{
+  background-image: url(../img/c10.gif);
+  
+}
+ @media (max-width: 767px){
+  .baking_categories1 .circle{
+  width: 120px;
+  height: 120px;
+  display: inline-block;
+  margin-right: 3%;
+  }
+  .baking_categories1 .circle:first-child{
+    margin-left: 3%;
+  }
+  .baking_categories2 .circle{
+  width: 120px;
+  height: 120px;
+  display: inline-block;
+  margin-right: 3%;
+  }
+  .baking_categories2 .circle:first-child{
+    margin-left: 3%;
+  }
+  .circle p{
+    width: 120px;
+  }
+ }
+ @media (min-width: 768px) and
+       (max-width: 991px){
+  .baking_categories1 .circle{
+  display: inline-block;
+  margin-right: 4%;
+  }
+  .baking_categories1 .circle:first-child{
+    margin-left: 4%;
+  }
+  .baking_categories2 .circle{
+  display: inline-block;
+  margin-right: 4%;
+  }
+  .baking_categories2 .circle:first-child{
+    margin-left: 4%;
+  }
+ }
+
+ @media (min-width: 992px){
+  .circle{
+      transition:0.3s
+  }
+  .circle:hover {
+   background-size: 125%;
+  }
+  .circle p{
+    background: linear-gradient(to left,  hsla(32, 100%, 20%, 0.5) 50%, #bc2a26 50%);
+    background-size: 200% 100%;
+    background-position:right bottom;
+    transition: 0.5s;
+  }
+  .circle:hover p{
+    background-position:left bottom;
+  }
+ }
+ 
+

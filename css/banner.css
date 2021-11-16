@@ -1,0 +1,123 @@
+.banner{
+  /* border: 1px solid red; */
+  font-size: 0px;
+  /* min-width: 1200px; */
+  width: 95%;
+  margin: 0 auto;
+  list-style: none;
+  padding-top: 97px;
+  
+}
+
+.banner li{
+  /* border: 1px solid blue; */
+  width: 1200px;
+  margin: 0 auto;
+  outline: none;
+}
+.banner li img {
+     width: 100%;
+      list-style: none;
+      margin: 0 auto;
+
+    }
+button{
+  margin: 0;
+  padding: 0;
+  background: none;
+  /* border: 1px solid yellow;
+  border: none; */
+  border-radius: 0;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.slide-arrow{
+  position: absolute;
+  top: 55%;
+  margin-top: -15px;
+   /* border: 1px solid yellow; */
+}
+.prev-arrow{
+  left: -30px;
+  width: 0;
+  height: 0;
+  border-left: 0 solid transparent;
+  border-right: 15px solid rgb(207, 207, 207);
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  cursor: pointer;
+}
+.next-arrow{
+  right: -30px;
+  width: 0;
+  height: 0;
+  border-right: 0 solid transparent;
+  border-left: 15px solid rgb(207, 207, 207);
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  cursor: pointer;
+}
+@media (max-width: 767px){
+  .banner{
+    width: 100%;
+    padding-top: 50px;
+  }
+  .banner li{
+  width: 100%;
+   }
+  .banner li img{
+  width: 100%;
+   }
+  button{
+     display: none;
+   }
+  .slide-arrow,.prev-arrow,.next-arrow{
+     display: none;
+   }
+  .slide-arrow,.next-arrow,.slick-arrow{
+     display: none;
+   }
+}
+@media (min-width: 768px) and
+       (max-width: 991px){
+  .banner{
+    width: 100%;
+    padding-top: 50px;
+  }
+  .banner li{
+  width: 100%;
+   }
+  .banner li img{
+  width: 100%;
+   }
+  .slide-arrow,.next-arrow,.slick-arrow{
+     display: none;
+   }
+
+}
+
+@media (min-width: 992px) and
+       (max-width: 1199px){
+  .banner{
+    width: 960px;
+    max-width: 910px;
+   }
+  .banner li{
+  width: 100%;
+   }
+  .slide-arrow,.next-arrow{
+     display: none;
+   }
+}
+@media (min-width: 1200px){
+  .banner{
+    width: 1140px;
+    max-width: 1110px;
+  }
+  .banner li{
+  width: 100%;
+   }
+
+}

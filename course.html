@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1, user-scalable=no">
+  <title>piece of cake_course</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/header_rwd.css">
+  <link rel="stylesheet" href="./bootstrap_installed_sample/vendors/css/hamburgers.css">
+  <link rel="stylesheet" href="./css/search.css">
+  <link rel="stylesheet" href="./css/index_h1.css">
+
+  <link rel="stylesheet" href="./css/main_course.css">
+  <link rel="stylesheet" href="./css/course.css">
+  <link rel="stylesheet" href="./slick/css/slick.css">
+  <link rel="stylesheet" href="./slick/css/slick-theme.css">
+  <link rel="stylesheet" href="./css/slick.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/course_cards.css">
+  <link rel="stylesheet" href="./css/pagination.css">
+  <link rel="stylesheet" href="./css/footer.css">
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <div class="logo">
+        <a href="./index.html" class="logo_a">
+          <img src="./img/logo.png" ait="piece of cake">
+          <span>piece of cake</span>
+        </a>
+      </div>
+      <div class="nav_bar">
+        <!-- 第一行 -->
+        <div class="search">
+          <form action="#" method="get">
+            <div class="search_input">
+              <input type="text" placeholder="search for over 500,000+recipes">
+              <button>
+                <img src="https://img.icons8.com/ios-filled/50/000000/search.png" />
+              </button>
+            </div>
+          </form>
+          <!-- window<767 搜尋 -->
+          <div class="fake_search">
+            <div class="fake_search_input">
+              <img src="https://img.icons8.com/ios-filled/50/000000/search.png" alt="">
+            </div>
+          </div>
+          <div class="button">
+            <a href="./write_recipe.html">Write recipe
+            </a>
+            <a href="./recipe.html" class="button2">My recipe</a>
+          </div>
+
+          <!-- 漢堡按鈕 -->
+          <button class="hamburger hamburger--squeeze" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+        </div>
+        <!-- 第二行 -->
+        <nav class="nav">
+          <ul class="nav_list">
+            <li>
+              <div class="social_block">
+                Baking
+                <ul class="social_link_list">
+                  <li>
+                    <a href="./categories.html">cakes</a>
+                  </li>
+                  <li>
+                    <a href="./categories.html">cookie
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./categories.html">waffle
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./categories.html">cupcakes
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./categories.html">bread
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./categories.html">pie
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./categories.html">tarts
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./categories.html">mousse
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./categories.html">doughnts
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./categories.html">dessert
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="./categories.html" target="">Trending</a>
+            </li>
+
+
+            <li>
+              <div class="social_block">
+                Simple
+                <ul class="social_link_list">
+                  <li>
+                    <a href="./categories.html">no oven</a>
+                  </li>
+                  <li>
+                    <a href="./categories.html">quick dessert</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="./course.html" target="" class="-on">Course</a>
+            </li>
+            <li>
+              <a href="./cart.html" target="">Store</a>
+            </li>
+            <li>
+              <a href="sign.html">
+                login in
+              </a>
+              <div class="cart">
+                <a href="./sign.html">
+                  <img src="./icon/icons8-male-user-24.png" alt="account">
+                </a>
+                <a href="./cart.html">
+                  <img src="./icon/icons8-shopping-cart-50.png" alt="cart">
+                </a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- 搜尋視窗 -->
+    <div class="search_slide">
+      <div class="input_slide">
+        <form action="#" method="get">
+          <input type="text" placeholder="search for over 500,000+recipes" id="searchBar">
+        </form>
+        <button>
+          <img src="./icon/close.svg">
+        </button>
+      </div>
+    </div>
+
+  </header>
+
+  <!-- 右下按鈕 -->
+  <div class="write">
+    <a href="write_recipe.html">
+      <img src="./icon/edit.svg" alt="">
+    </a>
+  </div>
+  <div class="heart">
+    <a href="recipe.html">
+      <img src="./icon/heart .svg" alt="">
+    </a>
+  </div>
+  <div class="cart_icon">
+    <a href="cart.html">
+      <img src="./icon/supermarket.svg" alt="">
+    </a>
+  </div>
+
+  <!-- 輪播 -->
+  <div class="slick_slider multiple-items">
+    <div class="items">
+      <img src="./img/couese1.jpg" alt="">
+      <div class="overlay"></div>
+    </div>
+    <div class="items">
+      <img src="./img/couese2.jpg" alt="">
+      <div class="overlay"></div>
+    </div>
+    <div class="items">
+      <img src="./img/couese3.jpg" alt="">
+      <div class="overlay"></div>
+    </div>
+    <div class="items">
+      <img src="./img/couese4.jpg" alt="">
+      <div class="overlay"></div>
+    </div>
+    <div class="items">
+      <img src="./img/couese6.jpg" alt="">
+      <div class="overlay"></div>
+    </div>
+    <div class="items">
+      <img src="./img/couese4.jpg" alt="">
+      <div class="overlay"></div>
+    </div>
+    <div class="items">
+      <img src="./img/couese3.jpg" alt="">
+      <div class="overlay"></div>
+    </div>
+  </div>
+  <!-- 課程 -->
+  <div class="index_main course">
+    <h1>Course</h1>
+    <div class="course1">
+      <div class="content">
+        <span>Gingerbread people</span>
+        <p>Kids will love making, decorating and eating these biscuits – but let’s face it, more the eating! They can
+          either
+          be
+          given as gifts, or used to decorate the tree. Make things more fun with a variety of cutters. ”</p>
+      </div>
+      <div class="course2"></div>
+      <a href="course.html">BUY Now</a>
+    </div>
+  </div>
+  <!-- 老師區 -->
+  <div class="teacher_info">
+    <div>
+      <div>
+        <p class="teacher">Gordon Ramsay
+        </p>
+        <p>Restaurant Gordon Ramsay in Chelsea, London, has held three Michelin stars since 2001. After rising to fame
+          on
+          the
+          British television miniseries Boiling Point in 1998, Ramsay had become one of the best-known and most
+          influential
+          chefs
+          in the UK by 2004.
+        </p>
+      </div>
+      <img src="./img/gordon1.png" alt="">
+    </div>
+  </div>
+  <!-- 所有課程 -->
+  <div class="index_main all_course">
+    <h1>All Course</h1>
+    <!-- 課程1 -->
+    <div class="course_cards">
+      <img src="./img/tarts.jpg" alt="">
+      <div class="content">
+        <div class="list">
+          <h4>Portuguese Custard Tarts For All Levels!</h4>
+          <span class="tag">HOT</span>
+          <span class="time">3 total hours</span>
+          <span class="level">all levels</span>
+          <p>
+            Bake Portugal's most iconic pastry with a 5th generation baker from Lisbon. With PRO tips for bakery level
+            results!
+          </p>
+
+        </div>
+        <div class="price">
+          <div class="all_price">
+            <p class="sale_price">US$19</p>
+            <p class="original_price">US$30.5</p>
+          </div>
+          <div class="review">
+            <img src="./icon/star.png" alt="">
+            <p>(71 reviews)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 課程2 -->
+    <div class="course_cards">
+      <img src="./img/macha.jpg" alt="">
+      <div class="content">
+        <div class="list">
+          <h4>Japanese Pastry Course #3 Matcha Desserts</h4>
+          <span class="tag">HOT</span>
+          <span class="time">1 total hours</span>
+          <span class="level">beginner</span>
+          <p>
+            Learn the differences of several green teas, and how to use matcha properly for drinks and baking delicious
+            cakes.
+          </p>
+
+        </div>
+        <div class="price">
+          <div class="all_price">
+            <p class="sale_price">US$12</p>
+            <p class="original_price">US$20</p>
+          </div>
+          <div class="review">
+            <img src="./icon/star.png" alt="">
+            <p>(20 reviews)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 課程3 -->
+    <div class="course_cards">
+      <img src="./img/lefse.jpg" alt="">
+      <div class="content">
+        <div class="list">
+          <h4>The Art of Lefse Making</h4>
+          <span class="tag">HOT</span>
+          <span class="time">1.5 total hours</span>
+          <span class="level">beginner</span>
+          <p>
+            The step-by-step process for successfully making Authentic Scandinavian Lefse.
+          </p>
+
+        </div>
+        <div class="price">
+          <div class="all_price">
+            <p class="sale_price">US$15.99</p>
+            <p class="original_price">US$25.99</p>
+          </div>
+          <div class="review">
+            <img src="./icon/star.png" alt="">
+            <p>(157 reviews)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 課程4 -->
+    <div class="course_cards">
+      <img src="./img/pizza.jpg" alt="">
+      <div class="content">
+        <div class="list">
+          <h4>#7 Bake the Best Pizza Crust</h4>
+          <span class="tag">HOT</span>
+          <span class="time">2.5 total hours</span>
+          <span class="level">intermediate</span>
+          <p>
+            Pizza perfection! bake up Neo- Neapolitan Pizza Crust , chewy, bubbly - delicious! With commercial yeast and
+            sourdough.
+          </p>
+
+        </div>
+        <div class="price">
+          <div class="all_price">
+            <p class="sale_price">US$21</p>
+            <p class="original_price">US$50</p>
+          </div>
+          <div class="review">
+            <img src="./icon/star.png" alt="">
+            <p>(68 reviews)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 課程5 -->
+    <div class="course_cards">
+      <img src="./img/macarons.jpg" alt="">
+      <div class="content">
+        <div class="list">
+          <h4>Candy Bar: Macarons, marshmallow, pâte de fruit and zefir</h4>
+          <span class="tag">NEW</span>
+          <span class="time">2.5 total hours</span>
+          <span class="level">Advanced</span>
+          <p>
+            You will know all secrets of candy bar in one course!
+          </p>
+
+        </div>
+        <div class="price">
+          <div class="all_price">
+            <p class="sale_price">US$22.99</p>
+            <p class="original_price">US$55.5</p>
+          </div>
+          <div class="review">
+            <img src="./icon/star.png" alt="">
+            <p>(0 reviews)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 課程6 -->
+    <div class="course_cards">
+      <img src="./img/cheesse_cake.jpg" alt="">
+      <div class="content">
+        <div class="list">
+          <h4>Japanese Pastry Course #2 Japanese Cheesecake</h4>
+          <span class="tag">NEW</span>
+          <span class="time">1.5 total hours</span>
+          <span class="level">all levels</span>
+          <p>
+            Learn how to make fluffy Japanese cotton cheese cake and bake rich cheese tarts. Amazing delicious desserts
+            baking!
+          </p>
+
+        </div>
+        <div class="price">
+          <div class="all_price">
+            <p class="sale_price">US$25.99</p>
+            <p class="original_price">US$33</p>
+          </div>
+          <div class="review">
+            <img src="./icon/star.png" alt="">
+            <p>(0 reviews)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 分頁 -->
+  <div class="pagination_block">
+    <ul class="pagination">
+      <li><a href="#">&lsaquo;</a></li>
+      <li><a href="#" class="-on">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+      <li><a href="#">&rsaquo;</a></li>
+    </ul>
+  </div>
+  <!-- footer -->
+
+  <footer class="footer">
+    <div class="footer_content">
+      <div class="social">
+        <a href="#">
+          <img src="https://img.icons8.com/color/48/000000/facebook-new.png" alt="facebook">
+        </a>
+        <a href="#">
+          <img src="https://img.icons8.com/color/48/000000/youtube-play.png" alt="youtube">
+        </a> <a href="#">
+          <img src="https://img.icons8.com/color/48/000000/instagram-new.png" alt="instagram">
+        </a>
+        <a href="#">
+          <img src="https://img.icons8.com/fluent/48/000000/pinterest.png" alt="pinterest">
+        </a>
+        <a href="#">
+          <img src="https://img.icons8.com/color/48/000000/twitter.png" alt="twitter">
+        </a>
+      </div>
+      <div class="info">
+        <ul>account
+          <li>
+            <a href="#">login</a>
+          </li>
+          <li>
+            <a href="#">setting</a>
+          </li>
+          <li>
+            <a href="#">save</a>
+          </li>
+          <li>
+            <a href="#">cart</a>
+          </li>
+        </ul>
+        <ul>contact
+          <li>
+            <a href="#">email</a>
+          </li>
+          <li>
+            <a href="#">facebook</a>
+          </li>
+          <li>
+            <a href="#">phone</a>
+          </li>
+
+        </ul>
+        <ul>about
+          <li>
+            <a href="#">information</a>
+          </li>
+          <li>
+            <a href="#">jobs</a>
+          </li>
+          <li>
+            <a href="#">support</a>
+          </li>
+        </ul>
+        <ul>privacy
+          <li>
+            <a href="#">
+              your rights
+            </a>
+          </li>
+        </ul>
+        <ul>F&amp;Q
+          <li>
+            <a href="#">common</a>
+          </li>
+          <li>
+            <a href="#">help</a>
+          </li>
+
+        </ul>
+      </div>
+      <p class="copyright ">Copyright &copy; 2020 piece of cake
+
+      </p>
+    </div>
+  </footer>
+  <!-- js -->
+  <script src="./slick/js/jquery-3.4.1.min.js">
+  </script>
+  <script src="./bootstrap_installed_sample/vendors/jquery/jquery-3.4.1.min.js"></script>
+  <script src="./bootstrap_installed_sample/vendors/jquery/jquery-ui.min.js"></script>
+
+  <script src="./js/hamburger.js"></script>
+  <script src="./slick/js/slick.min.js"></script>
+  <script>
+    $(function () {
+      $('.multiple-items').slick({
+
+        // normal options
+        centerMode: true,
+        infinite: true,
+        centerPadding: '0',
+        slidesToShow: 5,
+        speed: 3000,
+        slidesToScroll: 5,
+        autoplay: true,
+        // autoplay: false,
+        autoplaySpeed: 2000,
+        arrows: false,
+
+        // rwd
+        responsive: [{
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 5,
+              slidesToScroll: 5,
+            }
+          },
+          {
+            breakpoint: 540,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+            }
+          }
+        ]
+      })
+    });
+  </script>
+</body>
+
+</html>

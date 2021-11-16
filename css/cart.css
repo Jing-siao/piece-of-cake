@@ -1,0 +1,615 @@
+.index_main,
+.store {
+  margin-top: 0;
+}
+
+.product {
+  /* border: 1px solid gray; */
+  font-size: 0px;
+  font-family: 'Roboto', sans-serif;
+  color: #713f2c;
+
+
+}
+
+.product .product_img {
+  /* border: 1px solid rgb(226, 49, 49); */
+  display: inline-block;
+  margin-left: 10%;
+
+}
+
+.product_img .small_img {
+  /* border: 1px solid rgb(214, 61, 176);  */
+  display: inline-block;
+  vertical-align: top;
+
+}
+
+.product_img .small_img .other_img {
+  /* border: 1px solid rgb(61, 76, 214); */
+  width: 150px;
+  height: 500px;
+  vertical-align: top;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.small_img .other_img li {
+  border: 2px solid rgb(224, 224, 224);
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.small_img .other_img li img {
+  width: 100%;
+}
+
+.product_img .main_img {
+  /* border: 1px solid blue; */
+  width: 400px;
+  height: 500px;
+  display: inline-block;
+
+}
+
+.main_img img {
+  /* border: 1px solid black; */
+  width: 100%;
+  /* height: auto; */
+  margin-top: 51px;
+
+
+}
+
+.product_info {
+  display: inline-block;
+  /* border: 1px solid black; */
+  vertical-align: top;
+  margin-top: 51px;
+  margin-left: 50px;
+}
+
+.product_info h2 {
+  /* border: 1px solid rgb(228, 122, 122); */
+  font-size: 22px;
+  color: #bc2a26;
+  font-weight: 500;
+
+  /* padding: 15px; */
+}
+
+.product_info p {
+  /* border: 1px solid rgb(62, 20, 252); */
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.product_info .price {
+  /* border: 1px solid green; */
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.product_info .price h3 {
+  display: inline-block;
+  font-size: 16px;
+
+}
+
+.product_info .price h2 {
+  display: inline-block;
+  font-size: 22px;
+  font-weight: 500;
+  color: rgb(68, 68, 68);
+  margin-left: 10px;
+}
+
+.product_info label {
+  /* border: 1px solid rgb(252, 198, 20); */
+  font-size: 16px;
+
+
+}
+
+.product_info img {
+  display: block;
+  margin-top: 10px;
+}
+
+.product_info label select {
+  font-size: 16px;
+  width: 50px;
+  outline: none;
+  border: 1px solid rgb(240, 240, 240);
+  color: rgb(68, 68, 68);
+  margin-left: 10px;
+}
+
+.pack {
+  /* border: 1px solid rgb(20, 252, 51); */
+  margin-top: 10px;
+}
+
+.pack>div {
+  /* border: 1px solid rgb(20, 62, 252); */
+  display: inline-block;
+}
+
+.pack button.add {
+  text-align: center;
+  border: none;
+  font-size: 18px;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: #bc2a26;
+  color: white;
+  outline: none;
+  box-shadow: 1px 1px 2px lightslategray;
+  cursor: pointer;
+
+
+}
+
+.pack input {
+  font-size: 16px;
+  display: inline-block;
+  width: 50px;
+  border: 1px solid rgb(240, 240, 240);
+  outline: none;
+  color: rgb(68, 68, 68);
+  height: 25px;
+  text-align: center;
+}
+
+.pack input[type='number']::-webkit-outer-spin-button,
+.pack input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+}
+
+.pack a {
+  /* border: 1px solid black; */
+  display: inline-block;
+  margin-left: 30px;
+  width: 120px;
+  text-align: center;
+
+}
+
+.add-to-cart {
+  width: 100%;
+  font-size: 16px;
+  padding: 3px 15px;
+  outline: none;
+  background-color: #bc2a26;
+  color: white;
+  border: none;
+  box-shadow: 1px 1px 2px lightslategray;
+  cursor: pointer;
+}
+
+.add-to-cart:active {
+  box-shadow: -1px -1px 2px lightslategray;
+}
+
+.product_details {
+  margin: 60px auto 0;
+  /* border: 1px solid black; */
+
+}
+
+.product_details .all_details {
+  width: 55%;
+  display: inline-block;
+  /* border: 1px solid black; */
+}
+
+.product_details .title h2 {
+  font-size: 20px;
+  color: #713f2c;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.product_details .ingredients,
+.product_disclaimers,
+.warnings {
+  /* border: 1px solid blue; */
+  margin-top: 40px;
+}
+
+.product_details .title p {
+  font-size: 14px;
+  color: rgb(68, 68, 68);
+  font-family: 'Roboto', sans-serif;
+  margin-top: 20px;
+  line-height: 20px;
+}
+
+.product_details .nutrition {
+  display: inline-block;
+  /* border: 1px solid blue; */
+  width: 240px;
+  vertical-align: top;
+  margin-left: 10%;
+
+}
+
+.product_details .nutrition img {
+  /* border: 1px solid red; */
+  width: 100%;
+  /* height: 100%; */
+}
+
+.you_also_like {
+  margin: 80px auto 0;
+  font-size: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.you_also_like .other_items {
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 575px) {
+
+  .index_main,
+  .cart {
+    width: 94%;
+  }
+
+  .product {
+    width: 100%;
+    text-align: center;
+
+
+  }
+
+  .product .product_img {
+    display: inline-block;
+    margin: 0 auto;
+    position: relative;
+
+  }
+
+  .product_img .small_img {
+    display: block;
+    position: absolute;
+    bottom: -110px;
+    left: 0;
+    width: 100%;
+
+  }
+
+  .product_info {
+    display: block;
+    margin-top: 130px;
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .product_img .small_img .other_img {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .small_img .other_img li {
+    width: 90px;
+    height: 90px;
+  }
+
+  .product_img .main_img {
+    width: 55%;
+    height: auto;
+  }
+
+  .main_img img {
+    margin-top: 0;
+  }
+
+  .product_details .title h2 {
+    font-size: 16px;
+  }
+
+  .product_info p {
+    font-size: 12px;
+    margin-top: 8px;
+  }
+
+  .product_info .price {
+    margin-top: 10px;
+    margin-bottom: 8px;
+  }
+
+  .product_info .price h3 {
+    font-size: 14px;
+  }
+
+  .product_info .price h2 {
+    font-size: 20px;
+  }
+
+  .product_info label {
+    font-size: 14px;
+  }
+
+  .product_info label select {
+    font-size: 14px;
+  }
+
+  .pack input {
+    font-size: 14px;
+    width: 40px;
+  }
+
+  .add-to-cart {
+    font-size: 14px;
+  }
+
+  .pack a {
+    width: 110px;
+  }
+
+  .product_details {
+    margin-top: 30px;
+  }
+
+  .product_details .all_details {
+    width: 100%;
+    display: block;
+  }
+
+  .product_details .nutrition {
+    display: block;
+    width: 160px;
+    margin: 40px auto;
+
+  }
+
+  .product_details .ingredients,
+  .product_disclaimers,
+  .warnings {
+    margin-top: 15px;
+  }
+
+  .product_details .title p {
+    margin-top: 15px;
+    line-height: 18px;
+  }
+
+  .you_also_like {
+    margin-top: 30px;
+  }
+
+  .you_also_like .other_items {
+    width: 106%;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    overflow-x: scroll;
+    height: 325px;
+    margin-left: -3%;
+    display: block;
+    overflow-y: hidden;
+    /* border: 1px solid black; */
+    padding-top: 5px;
+
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+  .index_main,
+  .cart {
+    width: 94%;
+  }
+
+  .product {
+    width: 100%;
+    text-align: center;
+
+
+  }
+
+  .product .product_img {
+    display: inline-block;
+    margin: 0 auto;
+    position: relative;
+
+  }
+
+  .product_img .small_img {
+    display: block;
+    position: absolute;
+    bottom: -120px;
+    left: 10%;
+    width: 80%;
+
+  }
+
+  .product_info {
+    display: block;
+    margin-top: 140px;
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .product_img .small_img .other_img {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+  }
+
+  .small_img .other_img li {
+    width: 100px;
+    height: 100px;
+  }
+
+  .product_img .main_img {
+    width: 55%;
+    height: auto;
+  }
+
+  .main_img img {
+    margin-top: 0;
+  }
+
+  .product_details .title h2 {
+    font-size: 18px;
+  }
+
+  .product_info p {
+    font-size: 12px;
+    margin-top: 8px;
+  }
+
+  .product_info .price {
+    margin-top: 10px;
+    margin-bottom: 8px;
+  }
+
+  .product_info .price h3 {
+    font-size: 14px;
+  }
+
+  .product_info .price h2 {
+    font-size: 20px;
+  }
+
+  .product_info label {
+    font-size: 14px;
+  }
+
+  .product_info label select {
+    font-size: 14px;
+  }
+
+  .pack input {
+    font-size: 14px;
+    width: 40px;
+  }
+
+  .add-to-cart {
+    font-size: 14px;
+  }
+
+  .pack a {
+    width: 110px;
+  }
+
+  .product_details {
+    margin-top: 50px;
+  }
+
+  .product_details .all_details {
+    width: calc(100% - 190px);
+  }
+
+  .product_details .nutrition {
+    width: 160px;
+    margin: 0 10px;
+
+  }
+
+  .product_details .ingredients,
+  .product_disclaimers,
+  .warnings {
+    margin-top: 30px;
+  }
+
+  .product_details .title p {
+    margin-top: 15px;
+    line-height: 18px;
+  }
+
+  .you_also_like {
+    margin-top: 50px;
+  }
+
+  .you_also_like .other_items {
+    width: 106%;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    overflow-x: scroll;
+    height: 325px;
+    margin-left: -3%;
+    display: block;
+    overflow-y: hidden;
+    padding-top: 8px;
+    /* border: 1px solid black; */
+
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .index_main,
+  .cart {
+    width: 92%;
+  }
+
+  .product {
+    width: 100%;
+    text-align: center;
+  }
+
+  .product .product_img {
+    display: inline-block;
+    margin: 0 auto;
+
+
+  }
+
+  .product_info {
+    display: block;
+    margin-top: 30px;
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .product_details {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .product_details .all_details {
+    width: 62%;
+
+  }
+
+  .product_details .nutrition {
+    margin-right: 25px;
+
+  }
+
+  .you_also_like .other_items {
+    width: 108%;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    overflow-x: scroll;
+    height: 350px;
+    margin-left: -4%;
+    display: block;
+    overflow-y: hidden;
+
+  }
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .product .product_img {
+    margin-left: 0;
+
+  }
+}

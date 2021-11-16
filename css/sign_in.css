@@ -1,0 +1,367 @@
+.sign_outline {
+  /* border: 1px solid gray; */
+  margin: 0 auto;
+  padding-top: 150px;
+  width: 1140px;
+  height: 650px;
+  overflow: hidden;
+
+}
+
+.outline {
+  /* border: 1px solid gray; */
+  overflow: hidden;
+  background-color: #bc2a26;
+  position: relative;
+  font-size: 0;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.sign_outline .sign_photo {
+  /* border: 2px solid rgb(244, 248, 7); */
+  width: 650px;
+  height: 700px;
+  display: inline-block;
+  border-radius: 0% 30% 50% 0%;
+  background-image: url(../img/sign_bg.jpeg);
+  background-size: 115%;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: -80px;
+  z-index: 1;
+  position: relative;
+}
+
+.sign_in {
+  display: inline-block;
+  background-color: white;
+  box-shadow: 5px 5px 10px rgb(110, 15, 15);
+  border: 1px solid gray;
+  vertical-align: top;
+  width: 400px;
+  position: relative;
+  margin-left: -80px;
+  margin-top: 25px;
+  box-sizing: border-box;
+
+}
+
+.sign_in .login_logo {
+  /* border: 1px solid black; */
+  margin-top: 20px;
+  height: 100px;
+
+}
+
+.sign_in .login_logo img {
+  /* border: 1px solid black; */
+  height: 100%;
+  margin-left: 120px;
+}
+
+.sign_in form {
+  /* border: 1px solid black; */
+  width: 100%;
+
+}
+
+.sign_in form label {
+  display: block;
+  font-size: 18px;
+  margin-left: 110px;
+  position: relative;
+  margin-top: 40px;
+  /* border: 1px solid #a79c8e; */
+  width: 250px;
+  height: 30px;
+  box-shadow: none;
+  outline: none;
+}
+
+.sign_in form label input {
+  /* opacity: 1; */
+  height: 100%;
+  width: 100%;
+  border: 1px solid #a79c8e;
+  outline: none;
+  box-sizing: border-box;
+  padding-left: 5px;
+  font-size: initial;
+  border-radius: 0;
+  box-shadow: none;
+  -webkit-appearance: none;
+  /* border: 1px solid #a79c8e; */
+
+}
+
+.sign_in form .form_label span {
+  position: absolute;
+  z-index: 1;
+  left: 5px;
+  top: 5px;
+  color: #a79c8e;
+  transition: 0.5s;
+  /* border: 1px solid #713f2c; */
+}
+
+.sign_in form label input:focus {
+  /* opacity: 1; */
+  border: 1px solid #713f2c;
+  box-shadow: none;
+  outline: none;
+}
+
+.sign_in form label input:focus~span {
+  top: -50%;
+  font-size: 16px;
+  color: #713f2c;
+  background-color: white;
+  border: transparent;
+  outline: none;
+}
+
+.sign_in form label input:valid {
+  opacity: 1;
+  /* border: 1px solid #7/13f2c; */
+}
+
+
+.sign_in form label input:valid+span {
+  top: -50%;
+  font-size: 16px;
+  color: #713f2c;
+  background-color: white;
+
+}
+
+.sign_in form .login_in {
+  /* border: 1px solid blue; */
+  margin-top: 35px;
+  width: 100%;
+
+
+}
+
+.sign_in form .login_in .account {
+  /* border: 1px solid rgb(76, 112, 81); */
+  margin-left: 110px;
+
+}
+
+.sign_in form .login_in .account a {
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  /* border: 1px solid yellow; */
+  margin-right: 30px;
+
+
+}
+
+.sign_in form .login_in .login_via {
+  /* border: 1px solid black; */
+  margin-bottom: 25px;
+  margin-left: 110px;
+  width: 250px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.sign_in form .login_in .login_via img {
+  cursor: pointer;
+}
+
+.sign_in form .login_in .account a p {
+  /* border: 1px solid blue; */
+  padding: 5px;
+  font-size: 14px;
+  color: gray;
+}
+
+.sign_in form .login_in .account a p:hover {
+  text-decoration: underline;
+  color: #f77979;
+}
+
+.sign_in form .login_in button {
+  background-color: #eb9f9f;
+  font-family: 'Lobster', cursive;
+  outline: none;
+  border: none;
+  color: white;
+  font-weight: 500;
+  width: 100%;
+  height: 100%;
+  font-size: 26px;
+  height: 50px;
+}
+
+@media (max-width: 575px) {
+  .sign_outline {
+    width: 94%;
+    padding-top: 60px;
+    height: auto;
+    /* border: 1px solid blue; */
+
+
+  }
+
+  .outline {
+    text-align: center;
+    padding: 15px;
+
+  }
+
+  .sign_outline .sign_photo {
+    display: none;
+  }
+
+  .sign_in {
+    border: none;
+    margin: 0 auto;
+    width: 90%;
+    /* box-shadow: 5px 5px 8px rgb(209, 204, 204); */
+  }
+
+  .sign_in .login_logo {
+    margin-top: 15px;
+    height: 90px;
+    text-align: center;
+
+  }
+
+  .sign_in .login_logo img {
+    margin: 0 auto;
+  }
+
+  .sign_in form label {
+    margin: 32px auto 0 auto;
+    font-size: 16px;
+    width: 220px;
+    height: 30px;
+  }
+
+  .sign_in form .login_in .login_via {
+    margin: 0 auto 25px auto;
+    width: 220px;
+    justify-content: space-between;
+  }
+
+  .sign_in form .login_in .account {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .sign_in form .login_in .account a p {
+    font-size: 12px;
+  }
+
+  .sign_in form .login_in .account a {
+    margin: auto;
+  }
+
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .sign_outline {
+    width: 94%;
+    padding-top: 100px;
+    height: 550px;
+  }
+
+  .outline {
+    overflow: hidden;
+    text-align: center;
+
+  }
+
+  .sign_outline .sign_photo {
+    display: none;
+  }
+
+  .sign_in {
+    margin: 15px auto;
+    width: 60%;
+  }
+
+  .sign_in .login_logo {
+    margin-top: 15px;
+    height: 90px;
+    text-align: center;
+
+  }
+
+  .sign_in .login_logo img {
+    margin: 0 auto;
+  }
+
+  .sign_in form label {
+    margin: 32px auto 0 auto;
+    font-size: 16px;
+    width: 220px;
+    height: 30px;
+  }
+
+  .sign_in form .login_in .login_via {
+    margin: 0 auto 25px auto;
+    width: 220px;
+    justify-content: space-between;
+
+  }
+
+  .sign_in form .login_in .account {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .sign_in form .login_in .account a {
+    margin: auto;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .sign_outline {
+    width: 92%;
+    padding-top: 100px;
+    height: 550px;
+  }
+
+  .sign_outline .sign_photo {
+    width: 50%;
+    background-size: cover;
+    background-position: top;
+    margin-top: -150px;
+  }
+
+  .sign_in {
+    margin-top: 15px;
+  }
+
+  .sign_in .login_logo {
+    margin-top: 15px;
+    height: 90px;
+
+  }
+
+  .sign_in form label {
+    margin-top: 32px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .sign_outline {
+    width: 960px;
+  }
+
+  .sign_outline .sign_photo {
+    width: 550px;
+    background-size: 135%;
+    background-position: center;
+  }
+}
